@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading Habits Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1 id="title">Reading Habits Survey</h1>
+  <p id="description">We'd love to know more about your reading preferences and habits. Please fill out the form below.</p>
+
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input
+    id="name"
+    type="text"
+    placeholder="Enter your name"
+    required
+  />
+
+  <label id="email-label" for="email">Email</label>
+  <input
+    id="email"
+    type="email"
+    placeholder="Enter your email"
+    required
+  />
+
+  <label id="number-label" for="number">How many books do you read per year?</label>
+  <input
+    id="number"
+    type="number"
+    min="0"
+    max="100"
+    placeholder="e.g., 12"
+    required
+  />
+
+    <label for="dropdown">Favorite reading format</label>
+    <select id="dropdown">
+      <option value="">Select one</option>
+      <option value="print">Print books</option>
+      <option value="ebook">E-books</option>
+      <option value="audiobook">Audiobooks</option>
+    </select>
+
+    <p>Do you prefer fiction or non-fiction?</p>
+    <label><input type="radio" name="preference" value="fiction" /> Fiction</label>
+    <label><input type="radio" name="preference" value="non-fiction" /> Non-fiction</label>
+    <label><input type="radio" name="preference" value="both" /> Both</label>
+
+    
+    <p>Genres you enjoy (select all that apply):</p>
+    <label><input type="checkbox" value="fantasy" /> Fantasy</label>
+    <label><input type="checkbox" value="mystery" /> Mystery</label>
+    <label><input type="checkbox" value="biography" /> Biography</label>
+    <label><input type="checkbox" value="science" /> Science</label>
+
+    <p>Any additional comments or favorite books?</p>
+    <textarea placeholder="Share your thoughts..."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
