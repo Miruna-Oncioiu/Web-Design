@@ -162,3 +162,12 @@ footer {
     font-size: 2rem;
   }
 }
+ .project-tile img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; 
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
